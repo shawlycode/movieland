@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
+import API_URL from "./Url";
 
-const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=de31d68";
+
 
 const movies = {
   Title: "Spiderman and Grandma",
@@ -24,7 +25,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies('Harry Potter');
+    searchMovies('Fast and Furious');
   }, []);
 
   return (
